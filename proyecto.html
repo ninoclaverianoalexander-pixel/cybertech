@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberTech - Tienda Gaming & Tecnología</title>
+    <!-- Vinculación del archivo CSS -->
+    <link rel="stylesheet" href="estilo2.css">
+</head>
+<body>
+
+    <!-- Encabezado y Navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Cyber<span>Tech</span></div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Catálogo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Principal (Hero) -->
+    <main>
+        <section id="inicio" class="hero">
+            <h1>Potencia tu rendimiento al máximo</h1>
+            <p>Encuentra las mejores computadoras gaming y de oficina con componentes de última generación.</p>
+            <a href="#productos" class="btn-primary">Ver Catálogo</a>
+        </section>
+
+        <!-- Catálogo de Productos Gaming -->
+        <section id="productos" class="catalog">
+            <h2>Nuestras Computadoras</h2>
+            <div class="product-grid">
+                
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=600&auto=format&fit=crop" alt="PC Gamer Pro X" class="product-img">
+                    <div class="product-info">
+                        <h3>PC Gamer Pro X</h3>
+                        <p class="price">$1,200.00</p>
+                        <p class="desc">Intel Core i7, RTX 4060, 32GB RAM, 1TB NVMe.</p>
+                        <button class="btn-buy" onclick="agregarAlCarrito('PC Gamer Pro X', 1200)">Comprar</button>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=600&auto=format&fit=crop" alt="PC Oficina Elite" class="product-img">
+                    <div class="product-info">
+                        <h3>PC Oficina Elite</h3>
+                        <p class="price">$650.00</p>
+                        <p class="desc">AMD Ryzen 5, 16GB RAM, 512GB SSD, ideal multitarea.</p>
+                        <button class="btn-buy" onclick="agregarAlCarrito('PC Oficina Elite', 650)">Comprar</button>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=600&auto=format&fit=crop" alt="Laptop Gamer Ultra" class="product-img">
+                    <div class="product-info">
+                        <h3>Laptop Gamer Ultra</h3>
+                        <p class="price">$1,450.00</p>
+                        <p class="desc">Pantalla 144Hz, RTX 4070, diseño portátil y veloz.</p>
+                        <button class="btn-buy" onclick="agregarAlCarrito('Laptop Gamer Ultra', 1450)">Comprar</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 CyberTech. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Vinculación del archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
